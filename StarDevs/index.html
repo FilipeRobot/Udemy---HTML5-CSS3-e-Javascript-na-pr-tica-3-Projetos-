@@ -8,7 +8,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/styles.css">
     <!-- JS -->
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,8 +47,9 @@
         </section>
 
         <section class="phrases-container">
-            <button id="btn-phrases">Ler uma frase!</button>
-            <p id="phrase"></p>
+            <button id="btn-phrases" onclick="loadPhrase()">Ler uma frase!</button>
+            <p id="phrase">Star Wars Quotes API não esta funcionando</p>
+            <p>Portanto o botão não funcionará!</p>
         </section>
     </main>
 </body>
