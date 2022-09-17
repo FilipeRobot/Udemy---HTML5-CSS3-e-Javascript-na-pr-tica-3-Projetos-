@@ -5,18 +5,145 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML5, CSS3 e Javascript na prática (3 Projetos)</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/14ba718b2e.js" crossorigin="anonymous" defer></script>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            min-height: 9vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #383c42;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: white;
+        }
+
+        main {
+            width: 100%;
+            min-height: 60vh;
+            background: linear-gradient(#18acfe, #0166e1);
+
+            display: flex;
+            justify-content: center;
+
+            box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        footer {
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: inset 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+        }
+
+        footer a {
+            text-decoration: none;
+            color: inherit;
+            transition: 0.2s ease-in-out;
+        }
+
+        footer span {
+            color: black;
+        }
+
+        footer a:hover {
+            color: #0166e1;
+        }
+
+        .container {
+            display: flex;
+            background-color:#383c42;
+            color: white;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4);
+        }
+
+        .page {
+            margin: 5px 10px;
+            border-right: 1px solid black;
+            padding-right: 10px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page a {
+            color: inherit;
+        }
+
+        .page button {
+            background-color: #18acfe;
+            color: white;
+            padding: 5px;
+            height: 50px;
+            border: 0;
+            outline: 0;
+            border-radius: 15px;
+            margin-top: 10%;
+            font-size: 1.6em;
+            font-weight: 600;
+            cursor: pointer;
+            box-shadow: 1px 1px 3px 4px rgba(0, 0, 0, 0.3);
+            transition: 0.5s ease-in-out;
+        }
+
+        .page button:hover {
+            background-color: white;
+            color: #18acfe;
+        }
+
+        .page h2 {
+            margin-right: 10px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Titulo</h1>
+        <h1>HTML5, CSS3 e Javascript na prática (3 Projetos)</h1>
     </header>
 
     <main>
-        <p>Conteudo da pagina</p>
+        <section class="container">
+            <div class="page">
+                <h2>Login-Helper</h2>
+                <a href="./Login/index.html">
+                    <button>Projeto 1</button>
+                </a>
+            </div>
+            <div class="page">
+                <h2>GuessNumber</h2>
+                <a href="./GuessNumber/index.html">
+                    <button>Projeto 2</button>
+                </a>
+            </div>
+            <div class="page">
+                <h2>Star-Devs</h2>
+                <a href="./StarDevs/index.html">
+                    <button>Projeto 3</button>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Criador por: <a href="https://github.com/FilipeRobot" style="text-decoration: none; color: black;">Filipe Lemos</a>, 2022 &copy;</p>
+        <p>Criador por: <a href="https://github.com/FilipeRobot" target="_blank" rel="noopener noreferrer">FilipeRobot <span><i class="fa-brands fa-github"></i></span></a>, 2022 &copy;</p>
     </footer>
 </body>
 </html>
